@@ -1,4 +1,4 @@
-// find Largest Element in array 
+//1. find Largest Element in array 
 class Komal {
     public int largestElement(int[] nums) {
                 // assume first element is max
@@ -12,4 +12,14 @@ class Komal {
         }  
         return max;
     }
+}
+
+
+// 2.Second Largest Element
+class Komal{
+   public int secondLargestElement(int[] arr){
+     if(arr.length<2) return -1;
+     int Largest
+
+   }
 }
