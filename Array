@@ -96,3 +96,27 @@ class Solution {
         }
     }
     }
+
+
+
+
+//7.Move Zeros to End
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int pos = 0; // position to place next non-zero element
+
+        // Step 1: Move all non-zero elements forward
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[pos] = nums[i];
+                pos++;
+            }
+        }
+
+        // Step 2: Fill remaining with zeros
+        while (pos < nums.length) {
+            nums[pos] = 0;
+            pos++;
+        }
+    }
+}
