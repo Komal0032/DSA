@@ -1,0 +1,65 @@
+public class StringOperations {
+    public static void main(String[] args) {
+        String str = "  Hello Java World  ";
+
+        // 1. Length of string
+        System.out.println("Length: " + str.length());
+
+        // 2. Convert to uppercase & lowercase
+        System.out.println("Uppercase: " + str.toUpperCase());
+        System.out.println("Lowercase: " + str.toLowerCase());
+
+        // 3. Trim spaces
+        System.out.println("Trimmed: '" + str.trim() + "'");
+
+        // 4. Substring
+        System.out.println("Substring (6 to 10): " + str.substring(6, 10));
+
+        // 5. Character at index
+        System.out.println("Character at index 4: " + str.charAt(4));
+
+        // 6. Replace word
+        System.out.println("Replace 'Java' with 'Komal': " + str.replace("Java", "Komal"));
+
+        // 7. Check if contains
+        System.out.println("Contains 'World'? " + str.contains("World"));
+
+        // 8. Split string
+        String[] words = str.trim().split(" ");
+        System.out.print("Split words: ");
+        for (String w : words) {
+            System.out.print(w + " ");
+        }
+        System.out.println();
+
+        // 9. Equals & EqualsIgnoreCase
+        String str2 = "hello java world";
+        System.out.println("Equals str2? " + str.trim().equals(str2));
+        System.out.println("EqualsIgnoreCase str2? " + str.trim().equalsIgnoreCase(str2));
+
+        // 10. Concatenation
+        String greeting = str.trim().concat(" - Welcome!");
+        System.out.println("Concatenated: " + greeting);
+    }
+}
+
+
+/*length() → count characters
+
+toUpperCase() / toLowerCase() → change case
+
+trim() → remove extra spaces
+
+substring() → cut part of string
+
+charAt() → get one character
+
+replace() → change part of string
+
+contains() → check presence
+
+split() → break into words
+
+equals() / equalsIgnoreCase() → compare strings
+
+concat() → join strings*/
