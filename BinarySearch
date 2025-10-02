@@ -1,3 +1,5 @@
+//1. Search Number in Sorted Array
+
 class Komal{
 public static int BinarySearch(int[]arr,int target){
 int low=0;
