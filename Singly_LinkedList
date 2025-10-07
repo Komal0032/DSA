@@ -1,0 +1,19 @@
+//1.Inserting a node in LinkedList
+class Solution {
+    public ListNode insertAtHead(ListNode head, int X) {
+        // Step 1: Create a new node with value X
+        ListNode newNode = new ListNode(X);
+        
+        // Step 2: Point new node's next to the current head
+        newNode.next = head;
+        
+        // Step 3: Update head to newNode
+        head = newNode;
+        
+        // Step 4: Return the new head
+        return head;
+    }
+}
+
+
+//2.Deleting a node in LinkedList
