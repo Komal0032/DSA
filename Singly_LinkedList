@@ -17,3 +17,21 @@ class Solution {
 
 
 //2.Deleting a node in LinkedList
+
+class Solution {
+    public ListNode deleteHead(ListNode head) {
+
+
+        // If the list is empty, return null
+        if (head == null) {
+            return null;
+        }
+        
+        // Move the head pointer to the next node
+        head = head.next;
+        
+        // Return the new head
+        return head;
+    }
+}
+    
