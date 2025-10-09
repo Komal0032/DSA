@@ -34,4 +34,23 @@ class Solution {
         return head;
     }
 }
+
+
+//3.Find the length of the linkedlist
+class Solution {
+    public int getLength(ListNode head) {
+        // Your code goes here
+          int count = 0;
+        ListNode temp = head;
+
+        // Traverse the linked list
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+
+        // Return the total count
+        return count;
+    }
+}
     
