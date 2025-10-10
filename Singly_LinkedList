@@ -53,4 +53,23 @@ class Solution {
         return count;
     }
 }
-    
+
+
+//3.Search an element in the LL
+class Solution {
+    public boolean searchKey(ListNode head, int key) {
+        // Your code goes here
+         ListNode temp = head;
+
+        // Traverse the linked list
+        while (temp != null) {
+            if (temp.val == key) {
+                return true; // Key found
+            }
+            temp = temp.next; // Move to next node
+        }
+
+        // Key not found
+        return false;
+    }
+}
