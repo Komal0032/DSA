@@ -20,3 +20,34 @@ class Solution {
         return result.toString();
     }
 }
+
+//2.Reverse every word in a string
+class Solution {
+    public String reverseWords(String s) {
+
+        // Split by spaces (one or more)
+        String[] words = s.trim().split("\\s+");//s.trim() removes leading and trailing spaces.(spaces at the start or end).
+        //.split("\\s+") splits the string into words wherever one or more spaces appear.
+
+        // Reverse the array of words
+        //StringBuilder is a mutable string (we can change it without creating new objects).
+        //It is much faster when we need to repeatedly append or modify strings.
+        StringBuilder result = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            result.append(words[i]);
+            if (i > 0) {
+                result.append(" ");
+            }
+        }
+        
+        return result.toString();
+    }
+}
+
+/*
+time Complexity
+O(n) — where n is the number of characters in the string.
+(We go through the string once to split and once to rebuild it.)
+
+💾 Space Complexity:
+O(n) — extra space is used for the words array and the result string.*\
